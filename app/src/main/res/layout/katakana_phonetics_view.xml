@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/phonetics_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:maxHeight="100dp"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:hint="Enter phonetics here..."
+        android:textColorHint="#019299"
+        android:ellipsize="end"
+        android:background="@drawable/phonetics_edit_text_style"/>
+
+    <ImageButton
+        android:id="@+id/help_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/phonetics_edit_text"
+        android:layout_alignRight="@id/phonetics_edit_text"
+        android:background="@drawable/help_icon"/>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonetics_edit_text"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/phonetics_button_style_selector"
+        android:text="@string/convert_button_text"
+        android:textColor="@color/phonetics_background_white"/>
+
+    <TextView
+        android:id="@+id/phonetics_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:maxHeight="100dp"
+        android:padding="5dp"
+        android:layout_marginTop="50dp"
+        android:hint="Output displayed here..."
+        android:textIsSelectable="true"
+        android:textColor="#000000"
+        android:ellipsize="end"
+        android:textColorHint="#019299"
+        android:layout_below="@id/convert_button"
+        android:background="@drawable/phonetics_edit_text_style"/>
+
+    <Button
+        android:id="@+id/copy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonetics_output"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/phonetics_button_style_selector"
+        android:text="@string/copy_button_text"
+        android:textColor="@color/phonetics_background_white"/>
+
+    <Button
+        android:id="@+id/clear_all_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonetics_output"
+        android:layout_alignRight="@id/phonetics_edit_text"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/phonetics_button_style_selector"
+        android:text="@string/clear_button_text"
+        android:textColor="@color/phonetics_background_white"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Phonetics</string>
+    <string name="convert_button_text">Convert</string>
+    <string name="copy_button_text">Copy</string>
+    <string name="clear_button_text">Clear all</string>
+</resources>
