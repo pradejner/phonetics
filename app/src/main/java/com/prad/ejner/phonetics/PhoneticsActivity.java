@@ -20,7 +20,7 @@ public class PhoneticsActivity extends Activity {
 
         setContentView(phonetics_setup);
 
-        Log.i(TAG, "PhoneticsActivity setCreate() finished.");
+        Log.i(TAG, "PhoneticsActivity onCreate() finished.");
     }
 
     @Override
